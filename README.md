@@ -11,13 +11,17 @@ AWS Lambda 関数からIRISのNativeAPIを利用して、PythonからIRISに接�
 1. [Native API レイヤー用Zipの作成](#1-native-api-レイヤー用zipの作成)
 2. [サンプルのクラス定義のインポート](#2サンプルのクラス定義のインポート)
 3. [関数の作成とテスト実行](#3-関数の作成とテスト実行)
-4. [Cloudformatio___nのYAML例](#4-cloudformationのyaml例)
+4. [CloudformationのYAML例](#4-cloudformationのyaml例)
 ___
 
 ## 1. Native API レイヤー用Zipの作成
 
 Native API用モジュールのレイヤーを以下の手順で作成します。
+
+レイヤー作成用の任意ディレクトリを用意し、その下に `python` ディレクトリを用意します。
 ```
+mkdir python
+cd python
 wget https://github.com/intersystems/quickstarts-python/raw/master/Solutions/nativeAPI_wheel/irisnative-1.0.0-cp34-abi3-linux_x86_64.whl
 unzip irisnative-1.0.0-cp34-abi3-linux_x86_64.whl
 cd ..
@@ -189,4 +193,4 @@ Native APIでは、IRIS内のメソッドやルーチンを実行できます。
 
 例：[cloudformation.yml](/cloudformation.yml)
 
-実行の流れについては、「[PyODBC経由でIRISに接続するAWS Lambda関数を作成するまでの流れ]の」[3. 1,2の流れをCloudformationで行う例](https://jp.community.intersystems.com/node/538541#Cloudformation)と同様です。
+実行の流れについては、記事：「PyODBC経由でIRISに接続するAWS Lambda関数を作成するまでの流れ」[3. 1,2の流れをCloudformationで行う例](https://jp.community.intersystems.com/node/538541#Cloudformation)と同様です。
