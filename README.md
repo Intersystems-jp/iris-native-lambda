@@ -91,6 +91,8 @@ Native APIでは、IRIS内のメソッドやルーチンを実行できます。
 
 [connection.config](/examples/connection.config) を使用する index.py の10行目と12～16行目のコメントを外し19～23行目をコメント化して利用します。 接続するIRISの情報に合わせて [connection.config](/examples/connection.config) を変更してください。
 
+メモ：Lambda関数に設定する環境変数例は以下の通りです。
+![](/assets/environmentvaliable.png)
 
 ### テスト実行の引数例
 

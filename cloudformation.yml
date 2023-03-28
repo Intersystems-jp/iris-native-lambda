@@ -23,7 +23,6 @@
             NAMESPACE: "USER"
             USERNAME: "SuperUser"
             PASSWORD: "SYS"
-            ODBCSYSINI: "./"
         Code:
           S3Bucket: iijimas3
           S3Key: iris_native_code.zip
